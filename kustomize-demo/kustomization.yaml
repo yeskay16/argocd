@@ -6,3 +6,9 @@ namePrefix: kustomize-
 resources:
 - nginx-deployment.yaml
 - nginx-svc.yaml
+- argocd-notifications-v1.2.1-install.yaml
+
+patchesStrategicMerge:
+- argocd-notifications-catalog-v1.2.1-install.yaml
+
+
